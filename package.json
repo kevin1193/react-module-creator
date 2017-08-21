@@ -1,0 +1,31 @@
+{
+  "name": "react-module",
+  "version": "1.0.0",
+  "description": "Create react modules",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js", 
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevin1193/react-module.git"
+  },
+  "keywords": [
+    "React",
+    "Module",
+    "NPM",
+    "Command"
+  ],
+  "author": "Kevin Abestilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevin1193/react-module/issues"
+  },
+  "homepage": "https://github.com/kevin1193/react-module#readme",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-fs": "^1.0.0",
+    "mocha": "^3.5.0"
+  }
+}
