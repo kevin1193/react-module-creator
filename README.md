@@ -5,11 +5,11 @@ A small library that adds new module directory
 
 ## Installation
 
-  `npm install kevin1193/react-module`
+  `npm install react-module-creator`
 
 ## Usage
 
-    var moduleCreator = require('kevin1193/react-module');
+    var moduleCreator = require('react-module-creator');
     moduleCreator(directoryName);
   
   Output should be a new module directory with index.js
