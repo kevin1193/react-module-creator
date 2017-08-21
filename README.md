@@ -1,4 +1,4 @@
-Number Formatter
+React Module Creator
 =========
 
 A small library that adds new module directory
