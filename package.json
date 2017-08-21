@@ -30,7 +30,7 @@
     "mocha": "^3.5.0"
   },
   "bin": {
-    "create": "bin/create.js"
+    "create-react-module": "bin/create.js"
   },
   "dependencies": {
     "commander": "^2.11.0"
