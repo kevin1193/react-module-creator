@@ -4,7 +4,7 @@
   "description": "Create react modules",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js", 
+    "start": "node index.js",
     "test": "mocha --reporter spec"
   },
   "repository": {
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/kevin1193/react-module#readme",
   "devDependencies": {
     "chai": "^4.1.1",
+    "chai-files": "^1.4.0",
     "chai-fs": "^1.0.0",
     "mocha": "^3.5.0"
   }
