@@ -16,4 +16,12 @@ describe('#moduleCreator', function() {
         var result = moduleCreator(directory);
         expect(directory).to.be.a.directory('message').and.not.empty;
     });
+
+    it('should have an actions directory', function() {
+        expect(directory+'/actions').to.be.a.directory('message');
+    });
+
+    it('should have an actions directory and is not empty', function() {
+        expect(directory+'/actions').to.be.a.directory('message').and.not.empty;
+    });
 });
