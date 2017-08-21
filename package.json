@@ -1,6 +1,6 @@
 {
   "name": "react-module-creator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create react modules",
   "main": "index.js",
   "scripts": {
@@ -33,6 +33,7 @@
     "create-react-module": "bin/create.js"
   },
   "dependencies": {
-    "commander": "^2.11.0"
+    "commander": "^2.11.0",
+    "mkdirp": "^0.5.1"
   }
 }
