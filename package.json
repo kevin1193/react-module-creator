@@ -28,5 +28,11 @@
     "chai-files": "^1.4.0",
     "chai-fs": "^1.0.0",
     "mocha": "^3.5.0"
+  },
+  "bin": {
+    "create": "bin/create.js"
+  },
+  "dependencies": {
+    "commander": "^2.11.0"
   }
 }
