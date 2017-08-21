@@ -11,8 +11,11 @@ A small library that adds new module directory
 
     var moduleCreator = require('react-module-creator');
     moduleCreator(directoryName);
-  
   Output should be a new module directory with index.js
+
+  For command line 
+  `npm link react-module-creator`
+  `create-react-module "{moduleName}"`
 
 
 ## Tests
