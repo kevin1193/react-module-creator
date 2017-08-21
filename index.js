@@ -21,10 +21,39 @@ module.exports = function(directory) {
 					   if (err) throw err;
 					});
 	    		});
-		    	mkdirp(directory+'/constants');
-		    	mkdirp(directory+'/containers');
-		    	mkdirp(directory+'/reducers');
-		    	mkdirp(directory+'/routes');
+
+	    		var constantsDir = directory + '/constants';
+	    		mkdirp(constantsDir, function (err) {
+	    			var indexDir = constantsDir+'/index.js';
+	    			fs.writeFile(indexDir, '//Create index file here.', function (err) {
+					   if (err) throw err;
+					});
+	    		});
+
+	    		var containersDir = directory + '/containers';
+	    		mkdirp(containersDir, function (err) {
+	    			var indexDir = containersDir+'/index.js';
+	    			fs.writeFile(indexDir, '//Create index file here.', function (err) {
+					   if (err) throw err;
+					});
+	    		});
+
+	    		var reducersDir = directory + '/reducers';
+	    		mkdirp(reducersDir, function (err) {
+	    			var indexDir = reducersDir+'/index.js';
+	    			fs.writeFile(indexDir, '//Create index file here.', function (err) {
+					   if (err) throw err;
+					});
+	    		});
+
+	    		var routesDir = directory + '/routes';
+	    		mkdirp(routesDir, function (err) {
+	    			var indexDir = routesDir+'/index.js';
+	    			fs.writeFile(indexDir, '//Create index file here.', function (err) {
+					   if (err) throw err;
+					});
+	    		});
+
 	    	} catch (err) {
 	    		throw err
 	    	}

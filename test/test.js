@@ -33,4 +33,13 @@ describe('#moduleCreator', function() {
         var filePath = directory+'/actions';
         expect(file(filePath +'/index.js')).to.exist;
     });
+
+     it('should have an constants directory and is not empty', function() {
+        expect(directory+'/constants').to.be.a.directory('message').and.not.empty;
+    });
+
+    it('should have an index.js file inside constants directory', function() {
+        var filePath = directory+'/constants';
+        expect(file(filePath +'/index.js')).to.exist;
+    });
 });
