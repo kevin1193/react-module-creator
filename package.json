@@ -1,6 +1,6 @@
 {
   "name": "react-module-creator",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Create react modules",
   "main": "index.js",
   "scripts": {

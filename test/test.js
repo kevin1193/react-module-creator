@@ -21,25 +21,49 @@ describe('#moduleCreator', function() {
         expect(directory).to.be.a.directory('message').and.not.empty;
     });
 
-    it('should have an actions directory', function() {
-        expect(directory+'/actions').to.be.a.directory('message');
+    it('should have an containers directory', function() {
+        expect(directory+'/containers').to.be.a.directory('message');
     });
 
-    it('should have an actions directory and is not empty', function() {
-        expect(directory+'/actions').to.be.a.directory('message').and.not.empty;
+    it('should have an containers directory and is not empty', function() {
+        expect(directory+'/containers').to.be.a.directory('message').and.not.empty;
     });
 
-    it('should have an index.js file inside actions directory', function() {
-        var filePath = directory+'/actions';
+    it('should have an index.js file inside containers directory', function() {
+        var filePath = directory+'/containers';
         expect(file(filePath +'/index.js')).to.exist;
     });
 
-     it('should have an constants directory and is not empty', function() {
-        expect(directory+'/constants').to.be.a.directory('message').and.not.empty;
+    it('should have an components directory', function() {
+        expect(directory+'/components').to.be.a.directory('message');
     });
 
-    it('should have an index.js file inside constants directory', function() {
-        var filePath = directory+'/constants';
+    it('should have an components directory and is not empty', function() {
+        expect(directory+'/components').to.be.a.directory('message').and.not.empty;
+    });
+
+    it('should have an index.js file inside components directory', function() {
+        var filePath = directory+'/components';
         expect(file(filePath +'/index.js')).to.exist;
+    });
+
+    it('should have an constant.js file inside module directory', function() {
+        var filePath = directory;
+        expect(file(filePath +'/constant.js')).to.exist;
+    });
+
+    it('should have an saga.js file inside module directory', function() {
+        var filePath = directory;
+        expect(file(filePath +'/saga.js')).to.exist;
+    });
+
+    it('should have an reducer.js file inside module directory', function() {
+        var filePath = directory;
+        expect(file(filePath +'/reducer.js')).to.exist;
+    });
+
+    it('should have an selector.js file inside module directory', function() {
+        var filePath = directory;
+        expect(file(filePath +'/selector.js')).to.exist;
     });
 });

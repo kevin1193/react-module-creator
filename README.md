@@ -17,6 +17,16 @@ A small library that adds new module directory
   `npm link react-module-creator`
   `create-react-module "{moduleName}"`
 
+  Folder structure:
+   module_name
+     |--- components
+     |    |---index.js
+     |--- containers
+     |     |---index.js
+     |--- constant.js
+     |--- reducer.js
+     |--- saga.js
+     |--- selector.js
 
 ## Tests
 
